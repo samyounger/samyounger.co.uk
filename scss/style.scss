@@ -1,0 +1,170 @@
+$break-small: 800px;
+$break-smaller: 400px;
+
+* {
+	box-sizing: border-box;
+	font-family: 'Poiret One',cursive, sans-serif;
+	text-align: justify;
+}
+body {
+	width: 800px;
+	margin: 0 auto;
+	border-left: 1px solid lightgrey;
+	border-right: 1px solid lightgrey;
+	position: relative;
+	top: -20px;
+	left: 0; right: 0;
+	@media screen and (max-width: $break-small) {
+			width: 100%;
+	}
+	.wrapper {
+		min-height: 100%;
+		position: relative;
+		border-left: 1px solid lightgrey;
+		border-right: 1px solid lightgrey;
+	}
+}
+.title {
+	text-align: center;
+}
+header {
+	position: relative;
+	height: 100px;
+	border-bottom: 10px solid lightgrey;
+	background: #B3C9B2;
+}
+nav {
+	width: 100%;
+	height: 33%;
+	position: absolute;
+	left: 0; right: 0;
+	margin: 0 auto;
+	background: #4B786D;
+/*	@media screen and (max-width: $break-small) {
+		width: 100%;
+	}
+	@media screen and (max-width: $break-smaller) {
+		width: 100%;
+	}*/
+	ul {
+		max-width: 200px;
+		position: absolute;
+		left: 0; right: 0;
+		list-style: none;
+		float: left;
+		margin: 0 auto;
+		padding: 0;
+		li {
+			position: relative;
+			float: left;
+			margin: 0;
+			padding: 0;
+			&:hover {
+				background: #313731;
+			}
+			&:hover > ul {
+				display: block;
+			}
+			&:hover > a {
+				color: white;
+			}
+			a {
+				display: block;
+				color: white;  /*#333*/
+				text-decoration: none;
+				font-weight: 700;
+				font-size: 15px;
+				line-height: 32px;
+				padding: 0 15px;
+			}
+			ul {
+				display: none;
+				position: absolute;
+				left: 0;
+				background: #313731;
+				padding: 0;
+				li {
+					float: none;
+					width: 100%;
+					a {
+						color: white;
+						line-height: 120%;
+						padding: 10px 15px;
+					}
+				}
+			}
+		}
+	}
+}
+h2 {
+	margin: 10px 0 10px 5px;
+	.underline {
+		border-bottom: 1px solid lightgrey;
+	}
+	&:first-child {
+		border-top: none;
+	}
+}
+.contact h2 {
+	margin: 0 0 0 50px;
+	@media screen and (max-width: $break-small) {
+		margin: 0 0 0 10px;
+	}
+}
+img {
+	width: 30%;
+	float: right;
+	margin: 0 0 0 10px;
+	@media screen and (max-width: $break-smaller) {
+		display: none;
+	}
+}
+p {
+	margin: 0 10px 0 10px;
+	display: none;
+	&:last-child {
+		margin: 0 10px 10px 10px;
+	}
+}
+.icon {
+	width: 30px;
+	float: left;
+}
+container {
+	h2 a {
+		text-decoration: none;
+		color: black;
+	}
+	h3 {
+	position: relative;
+	left: 10%;
+	}
+}
+footer {
+	background: #B3C9B2;
+	border-top: 10px solid lightgrey;
+	width: 100%;
+	height: 50px;
+	line-height: 0;
+	clear: both;
+	h3 {
+		text-align: center;
+		span a {
+			text-decoration: none;
+			color: black;
+		}
+	}
+	@media screen and (max-width: $break-smaller) {
+		width: 100%;
+	}
+}
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
