@@ -1,145 +1,70 @@
 * {
   box-sizing: border-box;
-  font-family: 'Poiret One',cursive, sans-serif;
-  text-align: justify; }
+  font-family: "Poiret One", "avenir", sans-serif; }
 
 body {
-  width: 800px;
-  margin: 0 auto;
-  border-left: 1px solid lightgrey;
-  border-right: 1px solid lightgrey;
-  position: relative;
-  top: -20px;
-  left: 0;
-  right: 0; }
-  @media screen and (max-width: 800px) {
-    body {
-      width: 100%; } }
-  body .wrapper {
-    min-height: 100%;
-    position: relative;
-    border-left: 1px solid lightgrey;
-    border-right: 1px solid lightgrey; }
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto; }
 
-.title {
+h1 {
+  background: #B3C9B2;
+  font-size: 50px;
+  margin: 0;
+  padding: 10px;
   text-align: center; }
 
-header {
-  position: relative;
-  height: 100px;
-  border-bottom: 10px solid lightgrey;
-  background: #B3C9B2; }
-
 nav {
-  width: 100%;
-  height: 33%;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  background: #4B786D;
-  /*	@media screen and (max-width: $break-small) {
-  		width: 100%;
-  	}
-  	@media screen and (max-width: $break-smaller) {
-  		width: 100%;
-  	}*/ }
-  nav ul {
-    max-width: 200px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    list-style: none;
+  margin: 0; }
+  nav ul li {
+    width: 33.33%;
     float: left;
-    margin: 0 auto;
-    padding: 0; }
-    nav ul li {
-      position: relative;
-      float: left;
-      margin: 0;
-      padding: 0; }
-      nav ul li:hover {
-        background: #313731; }
-      nav ul li:hover > ul {
-        display: block; }
-      nav ul li:hover > a {
-        color: white; }
-      nav ul li a {
-        display: block;
-        color: white;
-        /*#333*/
-        text-decoration: none;
-        font-weight: 700;
-        font-size: 15px;
-        line-height: 32px;
-        padding: 0 15px; }
-      nav ul li ul {
-        display: none;
-        position: absolute;
-        left: 0;
-        background: #313731;
-        padding: 0; }
-        nav ul li ul li {
-          float: none;
-          width: 100%; }
-          nav ul li ul li a {
-            color: white;
-            line-height: 120%;
-            padding: 10px 15px; }
+    font-size: 24px;
+    padding: 10px;
+    margin: 0 0 10px;
+    text-align: center;
+    background: #4B786D; }
+    nav ul li:hover {
+      background: #313731; }
 
 h2 {
-  margin: 10px 0 10px 5px; }
-  h2 .underline {
-    border-bottom: 1px solid lightgrey; }
-  h2:first-child {
-    border-top: none; }
+  font-size: 25px;
+  border-bottom: 1px solid lightgrey;
+  padding: 10px;
+  margin: 10px;
+  max-width: 500px; }
 
-.contact h2 {
-  margin: 0 0 0 50px; }
-  @media screen and (max-width: 800px) {
-    .contact h2 {
-      margin: 0 0 0 10px; } }
+h2 a {
+  text-decoration: none;
+  color: black; }
 
+footer {
+  margin: 0; }
+  footer ul li {
+    width: 33.33%;
+    float: left;
+    font-size: 20px;
+    padding: 10px;
+    margin: 0 0 10px;
+    text-align: center;
+    background: #4B786D; }
+    footer ul li a {
+      text-decoration: none;
+      color: black; }
+
+/*====================================================*/
+/*Old styling*/
 img {
-  width: 30%;
-  float: right;
-  margin: 0 0 0 10px; }
-  @media screen and (max-width: 400px) {
-    img {
-      display: none; } }
-
-p {
-  margin: 0 10px 0 10px;
-  display: none; }
-  p:last-child {
-    margin: 0 10px 10px 10px; }
+  width: 300px;
+  float: right; }
 
 .icon {
   width: 30px;
   float: left; }
 
-container h2 a {
-  text-decoration: none;
-  color: black; }
-container h3 {
-  position: relative;
-  left: 10%; }
-
 footer {
   background: #B3C9B2;
-  border-top: 10px solid lightgrey;
-  width: 100%;
-  height: 50px;
-  line-height: 0;
-  clear: both; }
-  footer h3 {
-    text-align: center; }
-    footer h3 span a {
-      text-decoration: none;
-      color: black; }
-  @media screen and (max-width: 400px) {
-    footer {
-      width: 100%; } }
+  border-top: 10px solid lightgrey; }
 
 .cf:before,
 .cf:after {
